@@ -13,7 +13,7 @@ const Card = ({curElem,handleData}) => {
       
       <p className='text-xs text-justify ml-4 mb-5 mr-5 mt-3'>{body}</p>
         <button className='bg-green-900  ml-6 mr-5'>EDIT </button>
-      <button className='bg-red-800  ml-6 mr-5 ' onClick={() => handleData()}>DELETE</button>
+      <button className='bg-red-800  ml-6 mr-5 ' onClick={() => handleData(id)}>DELETE</button>
        
     </li>
    )

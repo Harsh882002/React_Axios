@@ -20,7 +20,7 @@ const Post = () => {
             const res = await deletePost(id);
             if (res.status === 200) {
                 const newUpdatesPoss = data.filter((curElem) => {
-                    return curElem.id !== id;
+                    return curElem.id != id;
                 });
                 setData(newUpdatesPoss);
             }
