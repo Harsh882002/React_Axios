@@ -5,11 +5,16 @@ const Card = ({curElem}) => {
     const {id,title,body} = curElem;
  
    return (
-    <li key={id} >
-      <h1>{ title}</h1>
-      <p>{body}</p>
-      <button>EDIT</button>
-      <button>DELETE</button>
+
+    
+    
+    <li key={id} className='bg-gray-700 text-white   h-55 ' >
+      <h1 className='text-xs ml-2 mt-1 text-justify'>{ title}</h1>
+      
+      <p className='text-xs text-justify ml-4 mb-5 mr-5 mt-3'>{body}</p>
+        <button className='bg-green-900  ml-6 mr-5'>EDIT </button>
+      <button className='bg-red-800  ml-6 mr-5 '>DELETE</button>
+       
     </li>
    )
 }

@@ -14,6 +14,14 @@ const Post = () => {
 
     };
 
+    const handleDeletePost = () =>{
+        try {
+            
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
     useEffect(() => {
         getPostData();
     }, []);
@@ -21,7 +29,7 @@ const Post = () => {
     return (
         <>
 
-            <ul>
+            <ul className='grid grid-cols-3 gap-7 relative   left-4 top-5   '>
                 {
                     data.map((curElem) => (
                              <Card key={curElem.id} curElem={curElem} />
