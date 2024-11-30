@@ -36,8 +36,26 @@ const Post = () => {
 
     return (
         <>
+            <div  className=' '>
+                <form action="" >
+                    <input type="text"
+                        name='title'
+                        placeholder='Enter Title'
+                        className='bg-white tex-black border border-solid border-indigo-700 m-3' 
+                    />
 
-            <ul className='grid grid-cols-3 gap-7 relative   left-4 top-5   '>
+                    <input type="text"
+                    name='data'
+                    placeholder='Enter Data'
+                    className='bg-white tex-black border border-solid border-indigo-700 m-4' 
+
+                    />
+
+                    <button className='bg-blue-800 w-12 border rounded'>Add </button>
+                </form>
+            </div>
+
+            <ul className='grid grid-cols-3 gap-7 relative left-4 top-5   '>
                 {
                     data.map((curElem) => (
                         <Card key={curElem.id} curElem={curElem} handleData={handleDeletePost} />

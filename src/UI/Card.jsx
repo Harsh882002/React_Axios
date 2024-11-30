@@ -5,10 +5,12 @@ const Card = ({curElem,handleData}) => {
     const {id,title,body} = curElem;
  
    return (
+ 
 
     
-    
-    <li key={id} className='bg-gray-700 text-white   h-55 ' >
+<div>
+
+    <li key={id} className='bg-gray-700 text-white     ' >
       <h1 className='text-xs ml-2 mt-1 text-justify'>{ title}</h1>
       
       <p className='text-xs text-justify ml-4 mb-5 mr-5 mt-3'>{body}</p>
@@ -16,6 +18,9 @@ const Card = ({curElem,handleData}) => {
       <button className='bg-red-800  ml-6 mr-5 ' onClick={() => handleData(id)}>DELETE</button>
        
     </li>
+
+</div>    
+  
    )
 }
 
